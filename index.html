@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Ticket</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header class=" mx-32 mt-12 lg:mb-32">
+        <!-- navbar -->
+        <nav class="font-raleway mb-12 ">
+            <div class="navbar ">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn  lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                        </div>
+                    </div>
+                    <h3 class="text-4xl font-extrabold">P-Ticket</h3>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end ">
+                    <a class="btn font-bold text-xl text-[#1DD100] rounded-xl px-7 py-5  bg-[#d9fdd366] border-[#1DD100]"  >Bus<img src="images/bus-icon.png" alt=""></a>
+                </div>
+            </div>
+        </nav>
+        <!-- hero -->
+        <div
+            class="hero rounded-3xl relative"
+            style="background-image: url('/images/banner.png');"
+            >
+            <div class="hero-overlay"></div>
+            <div class="hero-content text-neutral-content text-center py-32">
+                <div class="">
+                <h1 class=" text-8xl font-extrabold mb-20">End-to-End Travel with <br><span class=" text-[#1DD100]">P Paribahan</span></h1>
+                <p class="font-inter text-lg mb-20">
+                    Yes, you can run unit tests and view the results directly within the app. The <br> integrated testing features allow for a streamlined .
+                </p>
+                <button class="btn btn-primary border-none rounded-xl font-bold hover:bg-white bg-[#1DD100] text-3xl text-black p-7 mb-10">Buy Tickets</button>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center md:flex-wrap sm:flex-wrap items-center gap-20 mb-10">
+            <div class="card card-side bg-base-100 shadow-sm items-center w-80 px-8 rounded-xl border-b-2 border-b-green-400">
+                <figure class=" h-full ">
+                    <img
+                    src="images/people.png"
+                    alt="Movie" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title font-inter text-4xl font-bold">500k+</h2>
+                    <p class="font-inter">Registered Users</p>
+                    
+                </div>
+            </div>
+            <div class="card card-side bg-base-100 shadow-sm items-center w-80 px-8 rounded-xl border-b-2 border-b-green-400">
+                <figure class=" h-full ">
+                    <img
+                    src="images/ticket-cupon.png"
+                    alt="Movie" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title font-inter text-4xl font-bold">1.7 lacks</h2>
+                    <p class="font-inter">Tickets sold</p>
+                    
+                </div>
+            </div>
+            <div class="card card-side bg-base-100 shadow-sm items-center w-80 px-8 rounded-xl border-b-2 border-b-green-400">
+                <figure class=" h-full ">
+                    <img
+                    src="images/people.png"
+                    alt="Movie" />
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title font-inter text-4xl font-bold">80k+</h2>
+                    <p class="font-inter">Rental Partner</p>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </header>
+    <main>
+        <section class=" mx-32 text-center items-center">
+            <h2 class="font-bold text-5xl mb-12">Best offers for you</h2>
+            <div class="lg:flex justify-center lg:gap-24 ">
+                <div class="flex bg-yellow-500 rounded-xl items-center font-inter">
+                    <div class="p-10 items-center">
+                        <h2 class="font-extrabold text-5xl">15% OFF</h2>
+                        <p class="font-medium text-lg">on your next purchase</p>
+                        <p>use by january 2026</p>
+                    </div>
+                    <div class=""><img class="" src="images/cupon-devider.png" alt=""></div>
+                    <div class="pr-5">
+                        <h2 class="font-extrabold text-5xl">NEW15</h2>
+                        <p>cupon code</p>
+                    </div>
+                </div>
+                <div class="flex bg-yellow-500 rounded-xl items-center font-inter">
+                    <div class="p-10 items-center">
+                        <h2 class="font-extrabold text-5xl">20% OFF</h2>
+                        <p class="font-medium text-lg">on your next purchase</p>
+                        <p>use by january 2026</p>
+                    </div>
+                    <div class=""><img class="" src="images/cupon-devider.png" alt=""></div>
+                    <div>
+                        <h2 class="font-extrabold text-4xl">COUPLE 20</h2>
+                        <p>cupon code</p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
