@@ -180,7 +180,7 @@
                         
                     </div>
                 </div>                
-                <div class=" flex justify-between bg-white p-10 rounded-3xl">
+                <div class=" lg:flex justify-between bg-white p-10 rounded-3xl">
                     <!-- seat plan -->
                     <div class="">
                     <!-- 1st -->
@@ -358,10 +358,10 @@
                     <!-- 2nd part of booking -->
                     <img src="images/Line 2.png" alt="">
                     <!-- 3rd part of booking -->
-                    <div>
-                        <h3 class="font-semibold text-3xl mb-5">Selected Seats</h3>
+                    <div class="font-inter">
+                        <h3 class=" font-raleway font-semibold text-3xl mb-5">Selected Seats</h3>
                         <img src="images/Line 1.png" alt="">
-                        <div class="font-inter bg-[#F7F8F8] mt-5 p-5 rounded-xl">
+                        <div class=" bg-[#F7F8F8] my-5 p-5 rounded-xl">
                             <div class="flex justify-between mb-5">
                                 <p class="">Seat <span class="text-green-500">0</span></p>
                                 <p class="">Class</p>
@@ -373,15 +373,34 @@
                                 <p class="hidden">Economy</p>
                                 <p class=""></p>
                             </div>
-                            <img src="images/Line 1.png" alt="">
+                            <img class="sm:hidden md:hidden" src="images/Line 1.png" alt="">
                             <div class=" flex justify-between my-5">
                                 <p>Total Price</p>
                                 <p>BDT <span>0</span></p>
                             </div>
                             <div class="flex justify-center">
-                                <input type="text" placeholder="Type here" class="input" />
-                                <div class="btn">Apply</div>
+                                <input type="text" placeholder="Have any cupon?" class="input " />
+                                <div class="btn  rounded-r-xl" disabled>Apply</div>
                             </div>
+                            <div class="flex justify-between my-5">
+                                <p>Grand Total</p>
+                                <p>0</p>
+                            </div>
+                        </div>
+                        <div class="items-center text-center">
+                            <p class="text-lg font-semibold">Passenger Name*</p>
+                            <input type="text" placeholder="Enter Your Name" class="input text-lg rounded-2xl mt-2 mb-5 h-16 w-3/6 outline-green-500 border-green-500" />
+                            <p class="text-lg font-semibold">Phone Number*</p>
+                            <input type="text" placeholder="Enter Your Number" class="input text-lg rounded-2xl mt-2 mb-5 h-16 w-3/6 outline-green-500 border-green-500" />
+                            <p class="text-lg font-semibold">E-mail ID</p>
+                            <input type="text" placeholder="Enter Your E-mail ID" class="input text-lg rounded-2xl mt-2 mb-7 h-16 w-3/6 outline-green-500 border-green-500" />
+                            <div> 
+                                <button class="btn  text-lg text-white rounded-2xl h-16 w-3/6" disabled>Confirm</button>
+                            </div>
+                        </div>
+                        <div class="flex justify-around lg:mt-22">
+                            <a class="text-gray-500" href="">Terms and Conditions</a>
+                            <a class="text-gray-500" href="">Cancellation Policy</a>
                         </div>
                     </div>
                 </div>
@@ -389,8 +408,35 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="bg-[#030712] text-white lg:p-32 p-4 ">
+        <div class="flex justify-between ">
+            <div class="">
+                <h2 class="font-extrabold text-4xl mb-5">P-Ticket</h2>
+                <p>P-Ticket is a digital platform to make your <br> daily commuting better.</p>
+            </div>
+            <div class="text-white items-center ">
+                <h3 class="text-xl font-semibold mb-4">Download our app</h3>
+                <div class="flex justify-center items-center p-2 gap-5 border-2 border-white rounded-xl">
+                    <img class="size-10" src="images/playstore.png" alt="">
+                    <div>
+                        <p>GET IT ON</p>
+                        <h3 class=" font-inter text-2xl">Google Play</h3>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+        <p class=" text-gray-500 font-bold text-2xl my-5">--------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
 
+        <div class="flex justify-between">
+            <p class="text-gray-500">@all rights reserved, P-Ticket services limited.2024</p>
+            <div class="flex justify-between gap-5">
+                <a href="">Terms & condition</a>
+                <a href="">Return & refund policy</a>
+                <a href="">Privacy policy</a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
