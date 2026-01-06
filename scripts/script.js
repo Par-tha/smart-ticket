@@ -6,6 +6,3 @@ function start(){
     showElementById('footer-section');
 }
 
-function click(){
-    console.log('done')
-}
