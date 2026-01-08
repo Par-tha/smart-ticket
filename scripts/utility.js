@@ -44,6 +44,7 @@ for(const seats of allSeats){
         div.appendChild(p3);
 
         allSeatChoosen.appendChild(div);
+        div.classList.add('flex', 'justify-between')
         
         // seat count
         count = count + 1;
