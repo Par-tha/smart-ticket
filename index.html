@@ -116,7 +116,7 @@
                     </div>
                     <div class=""><img class="" src="images/cupon-devider.png" alt=""></div>
                     <div>
-                        <h2 class="font-extrabold lg:text-4xl">COUPLE 20</h2>
+                        <h2 class="font-extrabold lg:text-4xl">COUPLE20</h2>
                         <p>cupon code</p>
                     </div>
                 </div> 
@@ -378,13 +378,13 @@
                                 <p>Total Price</p>
                                 <p>BDT <span id="total-cost">0</span></p>
                             </div>
-                            <div class="flex justify-center">
-                                <input type="text" placeholder="Have any cupon?" class="input " />
-                                <div class="btn  rounded-r-xl" disabled>Apply</div>
+                            <div id="cupon-card" class="flex justify-center">
+                                <input id="cupon-text" type="text" placeholder="Have any cupon?" class="input " />
+                                <div onclick="apply()" id="cupon-apply-btn" class="btn  rounded-r-xl" disabled>Apply</div>
                             </div>
                             <div class="flex justify-between my-5">
                                 <p>Grand Total</p>
-                                <p>0</p>
+                                <p id="grand-total">0</p>
                             </div>
                         </div>
                         <div class="items-center text-center">

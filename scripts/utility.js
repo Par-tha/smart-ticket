@@ -44,7 +44,7 @@ for(const seats of allSeats){
         div.appendChild(p3);
 
         allSeatChoosen.appendChild(div);
-        div.classList.add('flex', 'justify-between')
+        div.classList.add('flex', 'justify-between','mb-3')
         
         // seat count
         count = count + 1;
@@ -57,7 +57,6 @@ for(const seats of allSeats){
         // seat left
         
         seatLeft = seatLeft - 1 ;
-        console.log(seatLeft)
         setInnerText('seat-left', seatLeft);
 
         
@@ -67,11 +66,38 @@ for(const seats of allSeats){
         return ;
        }
        
-        
-       
-       
     })
 }
+
+// cupon apply button
+document.getElementById('cupon-text').addEventListener('keyup', function(e){
+    const text = e.target.value;
+    const cuponApplyBtn = document.getElementById('cupon-apply-btn');
+    
+
+    // cupon NEW15 and COUPLE20 
+    if(text === 'NEW15'){
+        cuponApplyBtn.style.backgroundColor = '#1DD100';
+        cuponApplyBtn.removeAttribute('disabled')
+        
+        
+    }
+    else if(text === 'COUPLE20'){
+        cuponApplyBtn.style.backgroundColor = '#1DD100';
+        cuponApplyBtn.removeAttribute('disabled');
+    }
+    else{
+        cuponApplyBtn.setAttribute('disabled', true);
+    }
+
+})
+
+
+
+function apply(){
+    console.log(text)
+        
+    }
 
 
 
